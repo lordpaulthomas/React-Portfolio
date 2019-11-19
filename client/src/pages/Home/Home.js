@@ -7,9 +7,9 @@ class Home extends Component {
       <div>
         <NavBar />
         <div id="about_me">
-          <div className="row bg-dark" id="about_title">
-            <div className="col-12 text-center border-light">
-              <h1 className="fluid text-center" >About Me</h1>
+          <div className="row">
+            <div className="col-12 text-center">
+              <h1 id="about_title" className="fluid text-center" >About Me</h1>
             </div>
           </div>
 
@@ -17,7 +17,7 @@ class Home extends Component {
             <div className="col-sm-9 col-lg-4">
             </div>
             <div className="vh-100">
-              <p className="bg-light col-8 pt-2 mt-5 ml-5" id="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quasi non sint voluptate ea eos alias
+              <p className="text-dark bg-light col-8 pt-2 mt-5 ml-5" id="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quasi non sint voluptate ea eos alias
                   accusamus suscipit quo vitae fuga deserunt doloribus, sunt aspernatur impedit officiis. Minima, ab
                   quasi!
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum blanditiis repudiandae

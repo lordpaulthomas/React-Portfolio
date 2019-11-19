@@ -6,7 +6,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div id="nav" className="bg-info">
+      <div id="nav" className="bg-info pt-3 pb-3">
         <ul className ="nav nav-tabs">
           <h1 className="ml-3 mr-3 text-dark">Paul Thomas</h1>
           <li className="nav-item">
