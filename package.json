@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/lordpaulthomas/Google-Books-Search#readme",
   "dependencies": {
+    "@steveeeie/react-page-transition": "^1.0.1",
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
