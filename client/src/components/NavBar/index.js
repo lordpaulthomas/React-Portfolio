@@ -9,10 +9,9 @@ class NavBar extends Component {
     return (
       <div id="nav" className="bg-dark pt-3 pb-3">
         <ul className="nav nav-tabs">
-
           <Link
             id="header"
-            to="/home"
+            to="/"
           >
             <h1 id="name" className="ml-3 mr-3">Paul Thomas</h1>
           </Link>
@@ -23,7 +22,7 @@ class NavBar extends Component {
               id="tab"
               to="/about"
               className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}>
-            About
+              About
               </Link>
           </li>
           <li className="nav-item">
