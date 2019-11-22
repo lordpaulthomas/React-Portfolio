@@ -45,7 +45,7 @@ class NavBar extends Component {
           </li>
 
           <span className="col-5"></span>
-          <img className="col-1" id="logo" src={logo} />
+          <img className="col-1" id="logo" src={logo} alt="" />
 
 
         </ul>
