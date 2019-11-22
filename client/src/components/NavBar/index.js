@@ -12,7 +12,7 @@ class NavBar extends Component {
 
           <Link
             id="header"
-            to="/"
+            to="/home"
           >
             <h1 id="name" className="ml-3 mr-3">Paul Thomas</h1>
           </Link>
@@ -22,7 +22,7 @@ class NavBar extends Component {
             <Link
               id="tab"
               to="/about"
-              className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+              className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}>
             About
               </Link>
           </li>

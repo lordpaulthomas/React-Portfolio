@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./../About";
 import shuffle from 'shuffle-array'
 import "./style.css"
+import Navbar from './../../components/NavBar'
 class Home extends Component {
 
   state = {
@@ -19,7 +20,7 @@ class Home extends Component {
     br: 2
   };
 
-  componentDidMount(){
+  componentDidMount() {
     this.setState({
       colors: shuffle(this.state.colors)
     });
@@ -133,10 +134,10 @@ class Home extends Component {
     }
   };
 
-  checkForWin(){
+  checkForWin() {
     if (this.state.tl === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br) {
       alert("you got it 0")
-      return(
+      return (
         <Router>
           <Route exact path="/about" goto="/about" component={About} />
         </Router>
@@ -148,30 +149,34 @@ class Home extends Component {
   render() {
 
     return (
-      
-      <div className="text-center">
-        <h1 className="mt-3">Hello my name is Paul Thomas</h1>
-        <h3>Thanks for coming to my website!</h3>
-        <h3>You must first solve this puzzle to enter</h3>
-        <div id="cube">
-          {this.checkForWin()}
-          <div className="row">
-            <div onClick={this.topLeft} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tl]}` }}></div>
-            <div onClick={this.topMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tm]}` }}></div>
-            <div onClick={this.topRight} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tr]}` }}></div>
+
+      <div>
+        <Navbar />
+        <div className="container pb-4 pt-4">
+          <div id="box" className="text-center">
+            <h1>Hello my name is Paul Thomas</h1>
+            <h3>Thanks for coming to my website!</h3>
+            <h3>You must first solve this puzzle to enter</h3>
           </div>
-          <div className="row">
-            <div onClick={this.leftMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.ml]}` }}></div>
-            <div onClick={this.middleMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.mm]}` }}></div>
-            <div onClick={this.rightMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.mr]}` }}></div>
-          </div>
-          <div className="row">
-            <div onClick={this.lowerLeft} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.bl]}` }}></div>
-            <div onClick={this.lowerMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.bm]}` }}></div>
-            <div onClick={this.lowerRight} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.br]}` }}></div>
+          <div className="container pt-4 mt-4">
+            {this.checkForWin()}
+            <div className="row d-flex justify-content-center" >
+              <div onClick={this.topLeft} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tl]}` }}></div>
+              <div onClick={this.topMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tm]}` }}></div>
+              <div onClick={this.topRight} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tr]}` }}></div>
+            </div>
+            <div className="row d-flex justify-content-center">
+              <div onClick={this.leftMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.ml]}` }}></div>
+              <div onClick={this.middleMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.mm]}` }}></div>
+              <div onClick={this.rightMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.mr]}` }}></div>
+            </div>
+            <div className="row d-flex justify-content-center">
+              <div onClick={this.lowerLeft} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.bl]}` }}></div>
+              <div onClick={this.lowerMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.bm]}` }}></div>
+              <div onClick={this.lowerRight} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.br]}` }}></div>
+            </div>
           </div>
         </div>
-
       </div>
     )
   }
