@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavBar from './../../components/NavBar'
+import API from './../../utils/API'
 class Contact extends Component {
   state = {
     name: "",
@@ -28,7 +29,8 @@ class Contact extends Component {
 
   handleSubmit = event => {
     
-    console.log(this.state.name, this.state.email, this.state.message)
+    
+    this.saveContact(this.state.name, this.state.email, this.state.message)
     this.setState({
       name: "",
       email: "",
@@ -39,6 +41,23 @@ class Contact extends Component {
     document.getElementById('inputEmail').value = '';
     document.getElementById('inputMessage').value = '';
   }
+
+  saveContact = (name, email, message) => {
+    const contact = {
+      name,
+      email,
+      message
+    }
+
+    API.saveContact(contact)
+      .then(res => {
+        console.log("Saved")
+      })
+      .catch(err => console.log(err))
+
+    alert("Thx for visiting!  I'll be in touch soon. ¯\_(ツ)_/¯ ")
+  }
+  
 
   render() {
     return (
