@@ -27,9 +27,7 @@ class Contact extends Component {
     });
   }
 
-  handleSubmit = event => {
-    
-    
+  handleSubmit = event => { 
     this.saveContact(this.state.name, this.state.email, this.state.message)
     this.setState({
       name: "",

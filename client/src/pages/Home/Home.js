@@ -155,12 +155,12 @@ class Home extends Component {
           <div id="box" className="text-center">
             <h1>Hello my name is Paul Thomas</h1>
             <h3>Thanks for coming to my website!</h3>
-            <h3>You must first solve this puzzle to enter</h3>
+            <h3>Try to solve one of my favorite puzzles</h3>
           </div>
           <div className="container pt-4 mt-4">
             {this.checkForWin()}
             <div className="row d-flex justify-content-center" >
-              <div onClick={this.topLeft} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tl]}` }}></div>
+              <div id="" onClick={this.topLeft} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tl]}` }}></div>
               <div onClick={this.topMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tm]}` }}></div>
               <div onClick={this.topRight} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tr]}` }}></div>
             </div>
