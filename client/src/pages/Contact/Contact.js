@@ -52,7 +52,6 @@ class Contact extends Component {
         console.log("Saved")
       })
       .catch(err => console.log(err))
-
     alert("Thx for visiting!  I'll be in touch soon.")
   }
   
