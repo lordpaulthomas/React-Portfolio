@@ -1,12 +1,23 @@
 import React, { Component } from "react";
+import { ModalFooter, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import NavBar from './../../components/NavBar'
 import API from './../../utils/API'
+import Footer from './../../components/Footer'
+import giph from './../../ProjectData/videos/IMG_0105.MP4'
 class Contact extends Component {
   state = {
     name: "",
     email: "",
-    message: ""
+    message: "",
+    modal: false
   }
+
+  toggle = () => {
+    this.setState({
+      modal: !this.state.modal,
+    });
+  }
+
 
   handleNameInputChange = event => {
     const { value } = event.target;
@@ -27,13 +38,14 @@ class Contact extends Component {
     });
   }
 
-  handleSubmit = event => { 
+  handleSubmit = event => {
     this.saveContact(this.state.name, this.state.email, this.state.message)
     this.setState({
       name: "",
       email: "",
       message: ""
     })
+    this.toggle()
     event.preventDefault();
     document.getElementById('inputName').value = '';
     document.getElementById('inputEmail').value = '';
@@ -52,51 +64,70 @@ class Contact extends Component {
         console.log("Saved")
       })
       .catch(err => console.log(err))
-    alert("Thx for visiting!  I'll be in touch soon.")
+      
   }
-  
+
 
   render() {
     return (
       <div>
+        <div>
+          <Modal isOpen={this.state.modal} toggle={this.toggle}>
+            <ModalHeader toggle={this.toggle}></ModalHeader>
+            <ModalBody>
+              <h4 className="text-center">Thanks I'll be in touch soon! </h4>
+              <video width="475px" height="500px" id="home_video" controls preload="none" className="video-js vjs-default-skin">
+                <source src={giph} type="video/mp4" />
+                <track kind="captions" src="/vtt/captions.vtt" srcLang="en" label="English"></track>
+              </video>
+            </ModalBody>
+            <ModalFooter />
+          </Modal>
+        </div>
+
         <NavBar />
-        <div className="container">
-          <div className="row text-center pl-4">
-            <div className="col-4"></div>
-            <div className="col-4">
-              <h1>Contact</h1>
+        <div>
+          <div>
+            <div className="row text-center pl-4">
+              <div className="col-4"></div>
+              <div className="col-4">
+                <h1>Contact</h1>
+              </div>
+              <div className="col-4"></div>
             </div>
-            <div className="col-4"></div>
-          </div>
-          <div className="row">
-            <div className="col-4"></div>
-            <div className="col-4">
-              <form >
-                <div className="form-group">
-                  <label>Name:</label>
-                  <input type="name" onChange={this.handleNameInputChange}
-                    className="form-control"
-                    id="inputName" aria-describedby="nameHelp"
-                    placeholder="Enter Name" />
-                </div>
-                <div className="form-group">
-                  <label>Email:</label>
-                  <input type="email" className="form-control" onChange={this.handleEmailInputChange}
-                    id="inputEmail" placeholder=" Enter Email" />
-                </div>
-                <div className="form-group">
-                  <label>Message:</label>
-                  <input type="message" className="form-control"
-                    id="inputMessage" placeholder="Enter Message" onChange={this.handleMessageInputChange} />
-                </div>
-                <button onClick={this.handleSubmit} type="submit" className="btn btn-outline-primary"
-                >Submit</button>
-              </form>
+            <div className="row">
+              <div className="col-4"></div>
+              <div className="col-4">
+                <form >
+                  <div className="form-group">
+                    <label>Name:</label>
+                    <input type="name" onChange={this.handleNameInputChange}
+                      className="form-control"
+                      id="inputName" aria-describedby="nameHelp"
+                      placeholder="Enter Name" />
+                  </div>
+                  <div className="form-group">
+                    <label>Email:</label>
+                    <input type="email" className="form-control" onChange={this.handleEmailInputChange}
+                      id="inputEmail" placeholder=" Enter Email" />
+                  </div>
+                  <div className="form-group">
+                    <label>Message:</label>
+                    <input type="message" className="form-control"
+                      id="inputMessage" placeholder="Enter Message" onChange={this.handleMessageInputChange} />
+                  </div>
+                  <button onClick={this.handleSubmit} type="submit" className="btn btn-outline-primary"
+                  >Submit</button>
+                </form>
+              </div>
+              <div className="col-4 pb-5"></div>
             </div>
-            <div className="col-4"></div>
           </div>
         </div>
+        <Footer />
+
       </div>
+
     )
   }
 }

@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import About from "./../About";
-import shuffle from 'shuffle-array'
-import "./style.css"
-import Navbar from './../../components/NavBar'
+
+import shuffle from 'shuffle-array';
+import "./style.css";
+import Navbar from './../../components/NavBar';
+import Footer from './../../components/Footer';
+import { ModalFooter, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import video from "./../../ProjectData/videos/IMG_0164.MOV"
 class Home extends Component {
 
   state = {
@@ -16,8 +18,15 @@ class Home extends Component {
     mr: 5,
     bl: 0,
     bm: 1,
-    br: 2
+    br: 2,
+    modal: false
   };
+
+  toggle = () => {
+    this.setState({
+      modal: !this.state.modal,
+    });
+  }
 
   componentDidMount() {
     this.setState({
@@ -27,6 +36,9 @@ class Home extends Component {
 
 
   topLeft = () => {
+    if (this.state.tl + 1  === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl + 1) {
+      this.toggle()
+     }
     if (this.state.tl === 5) {
       this.setState({
         tl: 0
@@ -39,6 +51,9 @@ class Home extends Component {
 
   };
   topMiddle = () => {
+    if (this.state.tl  === this.state.tm + 1  && this.state.tm + 1 === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+      this.toggle()
+     }
     if (this.state.tm === 5) {
       this.setState({
         tm: 0
@@ -50,6 +65,9 @@ class Home extends Component {
     }
   };
   topRight = () => {
+    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr + 1 && this.state.tr + 1 === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+      this.toggle()
+     }
     if (this.state.tr === 5) {
       this.setState({
         tr: 0
@@ -62,6 +80,9 @@ class Home extends Component {
   };
 
   leftMiddle = () => {
+    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml + 1 && this.state.ml + 1 === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+      this.toggle()
+     }
     if (this.state.ml === 5) {
       this.setState({
         ml: 0
@@ -74,6 +95,9 @@ class Home extends Component {
   };
 
   middleMiddle = () => {
+    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml  && this.state.ml  === this.state.mm + 1 && this.state.mm + 1 === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+      this.toggle()
+     }
     if (this.state.mm === 5) {
       this.setState({
         mm: 0
@@ -86,6 +110,9 @@ class Home extends Component {
   };
 
   rightMiddle = () => {
+    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml  && this.state.ml === this.state.mm && this.state.mm === this.state.mr + 1 && this.state.mr + 1 === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+      this.toggle()
+     }
     if (this.state.mr === 5) {
       this.setState({
         mr: 0
@@ -98,6 +125,9 @@ class Home extends Component {
   };
 
   lowerLeft = () => {
+    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl + 1 && this.state.bl + 1 === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+      this.toggle()
+     }
     if (this.state.bl === 5) {
       this.setState({
         bl: 0
@@ -110,6 +140,9 @@ class Home extends Component {
   };
 
   lowerMiddle = () => {
+    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm + 1 && this.state.bm + 1 === this.state.br && this.state.br === this.state.tl) {
+      this.toggle()
+     }
     if (this.state.bm === 5) {
       this.setState({
         bm: 0
@@ -122,6 +155,9 @@ class Home extends Component {
   };
 
   lowerRight = () => {
+    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br + 1 && this.state.br + 1 === this.state.tl) {
+      this.toggle()
+     }
     if (this.state.br === 5) {
       this.setState({
         br: 0
@@ -133,23 +169,23 @@ class Home extends Component {
     }
   };
 
-  checkForWin() {
-    if (this.state.tl === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br) {
-      alert("you got it 0")
-      return (
-        <Router>
-          <Route exact path="/about" goto="/about" component={About} />
-        </Router>
-      )
-
-    }
-  }
-
   render() {
-
     return (
-
       <div>
+        <div>
+          <Modal isOpen={this.state.modal} toggle={this.toggle}>
+            <ModalHeader toggle={this.toggle}></ModalHeader>
+            <ModalBody>
+              <h4 className="text-center">You Did it! Enjoy a GC video :) </h4>
+              <video width="475px" height="500px" id="home_video" controls preload="none" className="video-js vjs-default-skin">
+                <source src={video} type="video/mp4" />
+                <track kind="captions" src="/vtt/captions.vtt" srcLang="en" label="English"></track>
+              </video>
+            </ModalBody>
+            <ModalFooter />
+          </Modal>
+        </div>
+
         <Navbar />
         <div className="container pb-4 pt-4">
           <div id="box" className="text-center">
@@ -158,7 +194,6 @@ class Home extends Component {
             <h3>Try to solve one of my favorite puzzles</h3>
           </div>
           <div className="container pt-4 mt-4">
-            {this.checkForWin()}
             <div className="row d-flex justify-content-center" >
               <div id="" onClick={this.topLeft} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tl]}` }}></div>
               <div onClick={this.topMiddle} style={{ height: '100px', width: "100px", border: "black 1px solid", backgroundColor: `${this.state.colors[this.state.tm]}` }}></div>
@@ -176,6 +211,9 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        <div>
+        </div>
+        <Footer />
       </div>
     )
   }

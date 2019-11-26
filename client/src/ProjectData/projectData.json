@@ -1,38 +1,76 @@
 [
   {
+    "id": 0,
+    "image": "https://media.giphy.com/media/dxZaGetO7mcM5wDz8o/giphy.gif",
+    "title": "That Song",
+    "link": "https://thatsong.herokuapp.com/",
+    "github": "https://github.com/PeterBWu/that-song"
+  },
+  {
     "id": 1,
-    "image": "https://media.giphy.com/media/7LfFXBn4we96o/giphy.gif",
-    "title": "Harry Potter Trivia",
-    "link": "https://lordpaulthomas.github.io/Trivia-Game-2/"
+    "image": "https://media.giphy.com/media/fA8YA68E2qGtwhG1fK/giphy.gif",
+    "title": "Memory Game",
+    "link": "https://lordpaulthomas.github.io/potter-clicky-game/",
+    "github": "https://github.com/lordpaulthomas/potter-clicky-game"
   },
   {
     "id": 2,
-    "image": "http://giphygifs.s3.amazonaws.com/media/117Q7xzQUHm69W/giphy.gif",
-    "title": "Giftastic",
-    "link": "https://lordpaulthomas.github.io/GifTastic/"
+    "image": "https://media.giphy.com/media/d8tEoHPUauuLcFpXf9/giphy.gif",
+    "title": "Google Books Search",
+    "link": "https://my-google-books-library.herokuapp.com/",
+    "github": "https://github.com/lordpaulthomas/Google-Books-Search"
   },
   {
     "id": 3,
-    "image": "https://media.giphy.com/media/RBBgQaTF4WCT6/giphy.gif",
-    "title": "Train Table",
-    "link": "https://lordpaulthomas.github.io/Train-Time/"
+    "image": "https://media.giphy.com/media/VbJvcKegzki57AskZH/giphy.gif",
+    "title": "Web Scraper",
+    "link": "https://crypto-desk.herokuapp.com/",
+    "github": "https://github.com/lordpaulthomas/News-Scraper"
   },
   {
     "id": 4,
+    "image": "https://media.giphy.com/media/lqLdXEQZYhJ91qOPjd/giphy.gif",
+    "title": "Gladiator",
+    "link": "https://gladiator-fights.herokuapp.com/",
+    "github": "https://github.com/PeterBWu/Gladiator"
+  },
+  {
+    "id": 5,
+    "image": "https://media.giphy.com/media/7LfFXBn4we96o/giphy.gif",
+    "title": "Harry Potter Trivia",
+    "link": "https://lordpaulthomas.github.io/Trivia-Game-2/",
+    "github": "https://github.com/lordpaulthomas/Trivia-Game-2"
+  },
+  {
+    "id": 6,
+    "image": "http://giphygifs.s3.amazonaws.com/media/117Q7xzQUHm69W/giphy.gif",
+    "title": "Giftastic",
+    "link": "https://lordpaulthomas.github.io/GifTastic/",
+    "github": "https://github.com/lordpaulthomas/GifTastic"
+  },
+  {
+    "id": 7,
+    "image": "https://media.giphy.com/media/RBBgQaTF4WCT6/giphy.gif",
+    "title": "Train Table",
+    "link": "https://lordpaulthomas.github.io/Train-Time/",
+    "github": "https://github.com/lordpaulthomas/Train-Time"
+  },
+  {
+    "id": 8,
     "image": "https://media.giphy.com/media/QtjrwGOR53DQqgBJHz/giphy.gif",
     "title": "Liri Node App",
     "link": "https://github.com/lordpaulthomas/liri-node-app"
   },
   {
-    "id": 5,
+    "id": 9,
     "image": "https://media.giphy.com/media/YmQQ7Q2SO67RitZ2rd/giphy.gif",
     "title": "CLI Word Guess Game",
-    "link": "https://github.com/lordpaulthomas/CLI-Word-Guess"
+    "github": "https://github.com/lordpaulthomas/CLI-Word-Guess"
   },
   {
-    "id": 6,
+    "id": 10,
     "image": "https://media.giphy.com/media/LmrwrZJziYEQTZYDUq/giphy.gif",
     "title": "BAMAZON",
-    "link": "https://github.com/lordpaulthomas/BAMAZON"
+    "github": "https://github.com/lordpaulthomas/BAMAZON"
   }
 ]
