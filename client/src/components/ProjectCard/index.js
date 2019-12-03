@@ -14,11 +14,11 @@ const ProjectCard = (props) => {
                 <img className='img-container' src={props.image} alt=""/>
               </div >
             </div>
-            <div className="card">
+     
               <h3 className="card-title">{props.title}</h3>
               <a className="card-text" href={props.link} style={{ fontSize: '25px', color: 'lightgray' }}> Link to Site</a><br />
               <a className="card-text" href={props.git} style={{ fontSize: '25px', color: 'lightgray' }}>Link to Code</a>
-            </div>
+ 
           </div>
         </div>
       </div>

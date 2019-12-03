@@ -64,7 +64,7 @@ class Contact extends Component {
         console.log("Saved")
       })
       .catch(err => console.log(err))
-      
+
   }
 
 
@@ -91,28 +91,30 @@ class Contact extends Component {
             <div className="row text-center pl-4">
               <div className="col-4"></div>
               <div className="col-4">
-                <h1>Contact</h1>
+              
               </div>
               <div className="col-4"></div>
             </div>
             <div className="row">
-              <div className="col-4"></div>
               <div className="col-4">
-                <form >
+              </div>
+              <div className="col-4 text-center" style={{padding: "30px"}}>
+                <h4 className="text-center">Interested in making something cool together?</h4>
+                <form>
                   <div className="form-group">
-                    <label>Name:</label>
+                    <label className="float-left">Name:</label>
                     <input type="name" onChange={this.handleNameInputChange}
                       className="form-control"
                       id="inputName" aria-describedby="nameHelp"
                       placeholder="Enter Name" />
                   </div>
                   <div className="form-group">
-                    <label>Email:</label>
+                    <label className="float-left">Email:</label>
                     <input type="email" className="form-control" onChange={this.handleEmailInputChange}
                       id="inputEmail" placeholder=" Enter Email" />
                   </div>
                   <div className="form-group">
-                    <label>Message:</label>
+                    <label className="float-left">Message:</label>
                     <input type="message" className="form-control"
                       id="inputMessage" placeholder="Enter Message" onChange={this.handleMessageInputChange} />
                   </div>
