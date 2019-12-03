@@ -171,7 +171,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div id='background'>
         <div>
           <Modal isOpen={this.state.modal} toggle={this.toggle}>
             <ModalHeader toggle={this.toggle}></ModalHeader>
@@ -187,7 +187,7 @@ class Home extends Component {
         </div>
 
         <Navbar />
-        <div className="text-center" id='move_box'> <a href="https://www.goodcharlotte.com/">Click Me!!</a></div>
+        <div className="text-center" id='move_box'> <a href="https://www.goodcharlotte.com/pages/about">Click Me!!</a></div>
         <div className="container pb-4 pt-4">
       
           <div id="box" className="text-center">

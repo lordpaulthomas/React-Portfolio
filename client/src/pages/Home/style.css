@@ -4,17 +4,23 @@ h1, h3 {
 }
 
 #move_box {
-  width: 50px;
-  height: 50px;
   background-color: red;
+  width: 200px;
   position: relative;
   animation: box 5s infinite;
+  opacity: 50%;
 }
 
 @keyframes box {
-  0%   {background-color:red; left:20vw; top:0px;}
-  25%  {background-color:yellow; left:80vw; top:0px;}
-  50%  {background-color:blue; left:80vw; top:30vh;}
-  75%  {background-color:green; left:20vw; top:30vh;}
-  100% {background-color:red; left:20vw; top:0px;}
+  0%   {background-color:red; left:10vw; top:2px;}
+  25%  {background-color:yellow; left:75vw; top:2px;}
+  50%  {background-color:blue; left:75vw; top:28vh;}
+  75%  {background-color:green; left:10vw; top:28vh;}
+  100% {background-color:red; left:10vw; top:2px;}
+}
+
+#background{
+  color: darkslategray;
+  text-shadow: 1px 1px white;
+  font-family: 'Arvo', serif;
 }

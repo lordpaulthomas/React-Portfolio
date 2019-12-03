@@ -15,7 +15,6 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/paul-thomas-b0409871/">  <img src={linkedin} width="38px" height="40px" alt="LinkedIn"/> | </a>
           <a href="https://twitter.com/BigPaulThomas">  <img src={twitter} width="40px" height="38px" alt="twitter"/> | </a>
           <a className="pr-3"href="https://soundcloud.com/ptgc">  <img src={soundCloud} width="40px" height="40px" alt="SoundCloud"/>    </a>
-          <i className="fa fa-cog fa-pulse fa-2x pl-2" aria-hidden="true"></i>
           </div>
       </footer>
     </div>
