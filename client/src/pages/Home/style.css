@@ -5,10 +5,15 @@ h1, h3 {
 
 #move_box {
   background-color: red;
+  color: yellow;
   width: 200px;
   position: relative;
   animation: box 5s infinite;
-  opacity: 50%;
+  opacity: 80%;
+}
+
+#move_box:visited{
+  color: yellow;
 }
 
 @keyframes box {
@@ -21,6 +26,5 @@ h1, h3 {
 
 #background{
   color: darkslategray;
-  text-shadow: 1px 1px white;
   font-family: 'Arvo', serif;
 }
