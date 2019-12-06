@@ -16,8 +16,8 @@ const ProjectCard = (props) => {
             </div>
      
               <h3 className="card-title">{props.title}</h3>
-              <a className="card-text" href={props.link} style={{ fontSize: '25px', color: 'lightgray' }}> Link to Site</a><br />
-              <a className="card-text" href={props.git} style={{ fontSize: '25px', color: 'lightgray' }}>Link to Code</a>
+              <a target="_blank" className="card-text" href={props.link} style={{ fontSize: '25px', color: 'lightgray' }}> Link to Site</a><br />
+              <a target="_blank" className="card-text" href={props.git} style={{ fontSize: '25px', color: 'lightgray' }}>Link to Code</a>
  
           </div>
         </div>

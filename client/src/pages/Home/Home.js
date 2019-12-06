@@ -187,7 +187,6 @@ class Home extends Component {
         </div>
 
         <Navbar />
-        <div className="text-center" id='move_box'> <a href="https://www.goodcharlotte.com/pages/about">Click Me!!</a></div>
         <div className="container pb-4 pt-4">
       
           <div id="box" className="text-center">

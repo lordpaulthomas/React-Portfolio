@@ -125,6 +125,8 @@ class Contact extends Component {
               <div className="col-4 pb-5"></div>
             </div>
           </div>
+          <div className="text-center" target="_blank" id='move_box'> <a href="https://www.goodcharlotte.com/pages/about">Click Me!!</a></div>
+
         </div>
         <Footer />
 
