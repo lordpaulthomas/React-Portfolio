@@ -16,13 +16,16 @@ class About extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-9 col-lg-4">
+            <div className="col-sm-6 col-lg-6">
             </div>
-            <div className="vh-100">
-              <p className="jumbtron" id="about_text">  
-              <iframe src={resume} title="resume" style={{width: '70vw', height: '80vh'}}></iframe>
+            <div className="vh-100 vw-100 ml-4 pl-4">
+              <p className="jumbtron text-center bg-light" id="about_text">  
+              Full Stack Developer with an extensive background in the music industry and studio engineering.  Passionate about learning new technologies, collaborating, and efficiently creating quality software.  
+
                 </p>
-              <p className="text-dark bg-light col-3 pt-2 ml-5">Check out my wikipedia.  <a href="https://en.wikipedia.org/wiki/Paul_Thomas_(bassist)">Go to wikipedia<i className="fa fa-paper-plane-o fa-1x" aria-hidden="true"></i>  </a>    It's pretty accurate <i className="fa fa-smile-o" aria-hidden="true"></i></p>
+                <div className="vh-100 vw-100 ml-4 pl-4">
+                <p id="link_box" className="text-dark bg-light col-3">Check out my wikipedia.  <a href="https://en.wikipedia.org/wiki/Paul_Thomas_(bassist)">Go to wikipedia<i className="fa fa-paper-plane-o fa-1x" aria-hidden="true"></i>  </a>    It's pretty accurate <i className="fa fa-smile-o" aria-hidden="true"></i></p>
+                </div>
             </div>
           </div>
         </div>

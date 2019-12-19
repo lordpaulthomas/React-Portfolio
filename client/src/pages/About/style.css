@@ -8,8 +8,10 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5em;
   z-index: 3;
+  width: 400px;
   color: black;
-
+  margin: auto;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 #about_title{
@@ -18,4 +20,10 @@
   text-shadow: 1px 3px white;
   font-size: 6em;
   margin-top: .5em;
+}
+#link_box{
+  margin: auto;
+  margin-top: 1rem;
+  box-shadow: 0 8px 6px -6px black;
+
 }
