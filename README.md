@@ -1,7 +1,7 @@
-Personal Portfolio Website
+**Personal Portfolio Website**
 --------------------------
 
-Licensing Information: Read LICENSE
+Licensing Information: READ LICENSE
 ---
 Project source can be downloaded from https://github.com/lordpaulthomas/React-Portfolio
 -----
@@ -11,7 +11,7 @@ Paul Thomas
 
 Description of Application
 -----------------
-The is *Paul Thomas' Personal Portfolio Website*.  It is a full stack application that uses `MongoDb` for storing an email list, `Node.js` to connect the server to the client.  The front-end utilizes `React.js` componants, state and properties along with `Express.js` to display the pages to the user. 
+This is *Paul Thomas' Personal Portfolio Website*.  It is a full stack application that uses `MongoDb` for storing an email list, `Node.js` to connect the server to the client.  The front-end utilizes `React.js` componants, state and properties along with `Express.js` to display the pages to the user. 
 
 
 About the game on *Home Page*
