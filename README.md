@@ -11,7 +11,7 @@ Paul Thomas
 
 Description of Application
 -----------------
-The is *Paul Thomas' Personal Portfolio Website*.  It is a full stack application that uses `MongoDb` for storing an email list, `Node.js` to connect the server to the client.  The front-end utilizes `React` componants, state and properties along with `Express.js` to display the pages to the user. 
+The is *Paul Thomas' Personal Portfolio Website*.  It is a full stack application that uses `MongoDb` for storing an email list, `Node.js` to connect the server to the client.  The front-end utilizes `React.js` componants, state and properties along with `Express.js` to display the pages to the user. 
 
 
 About the game on *Home Page*
