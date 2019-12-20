@@ -7,7 +7,8 @@ import './slider-animations.css';
 import './style.css';
 import paulPicOne from './../../images/paulPic.jpeg';
 import paulPicTwo from './../../images/goodcharlotte_header1.jpg';
-import paulPicThree from './../../images/photoPaulFire.JPG';
+import studio from './../../images/studio.jpg';
+import family from './../../images/family.jpeg';
 
 
 
@@ -15,7 +16,7 @@ const content = [
   {
     title: 'Musician and Engineer',
     description:
-      `Hello my name is Paul Thomas.  For the past twenty years I have been touring around the world playing music.`,
+      `Hello my name is Paul Thomas.  I am from Waldorf, MD.  A small town outside of Washington D.C.`,
     image: paulPicOne,
   },
   {
@@ -24,16 +25,16 @@ const content = [
       `Who knew the band I started in high school would go on to have global sales of over 11 million albums!`,
     button: 'Discover',
     image: paulPicTwo,
-    user: 'Erich Behrens',
-    userProfile: 'https://i.imgur.com/0Clfnu7.png'
   },
   {
-    title: 'Priceless',
-    description: `Getting to experience different cultures and connecting with people through music has blessed me with a rare global education that few possess.`,
-    button: 'Buy now',
-    image: paulPicThree,
-    user: 'Bruno Vizovskyy',
-    userProfile: 'https://i.imgur.com/4KeKvtH.png'
+    title: 'Tech',
+    description: `I have always been intrigued by technology, so I studied audio engineering so I could make music`,
+    image: studio,
+  },
+  {
+    title: 'Family',
+    description: `Now I am trying to spend more time with these guys.  Working closer to home making connections with people around the world with a new medium`,
+    image: family,
   }
 ];
 
@@ -45,11 +46,11 @@ const About = () => (
         <div
           key={index}
           className="slider-content"
-          style={{ background: `url('${item.image}')`, backgroundPosition: 'center'  }}
+          style={{ background: `url('${item.image}')`, backgroundPosition: 'center', backgroundSize: 'cover' }}
         >
           <div className="inner">
             <h1>{item.title}</h1>
-            <h3 className="text-light">{item.description}</h3>
+            <h3 style={{margin: 'auto', marginTop: '1em'}}className="text-light col-6">{item.description}</h3>
           </div>
         </div>
       ))}
