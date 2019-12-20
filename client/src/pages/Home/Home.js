@@ -36,9 +36,9 @@ class Home extends Component {
 
 
   topLeft = () => {
-    if (this.state.tl + 1  === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl + 1) {
+    if (this.state.tl + 1 === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl + 1) {
       this.toggle()
-     }
+    }
     if (this.state.tl === 5) {
       this.setState({
         tl: 0
@@ -51,9 +51,9 @@ class Home extends Component {
 
   };
   topMiddle = () => {
-    if (this.state.tl  === this.state.tm + 1  && this.state.tm + 1 === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+    if (this.state.tl === this.state.tm + 1 && this.state.tm + 1 === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
       this.toggle()
-     }
+    }
     if (this.state.tm === 5) {
       this.setState({
         tm: 0
@@ -65,9 +65,9 @@ class Home extends Component {
     }
   };
   topRight = () => {
-    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr + 1 && this.state.tr + 1 === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+    if (this.state.tl === this.state.tm && this.state.tm === this.state.tr + 1 && this.state.tr + 1 === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
       this.toggle()
-     }
+    }
     if (this.state.tr === 5) {
       this.setState({
         tr: 0
@@ -80,9 +80,9 @@ class Home extends Component {
   };
 
   leftMiddle = () => {
-    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml + 1 && this.state.ml + 1 === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+    if (this.state.tl === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml + 1 && this.state.ml + 1 === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
       this.toggle()
-     }
+    }
     if (this.state.ml === 5) {
       this.setState({
         ml: 0
@@ -95,9 +95,9 @@ class Home extends Component {
   };
 
   middleMiddle = () => {
-    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml  && this.state.ml  === this.state.mm + 1 && this.state.mm + 1 === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+    if (this.state.tl === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm + 1 && this.state.mm + 1 === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
       this.toggle()
-     }
+    }
     if (this.state.mm === 5) {
       this.setState({
         mm: 0
@@ -110,9 +110,9 @@ class Home extends Component {
   };
 
   rightMiddle = () => {
-    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml  && this.state.ml === this.state.mm && this.state.mm === this.state.mr + 1 && this.state.mr + 1 === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+    if (this.state.tl === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr + 1 && this.state.mr + 1 === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
       this.toggle()
-     }
+    }
     if (this.state.mr === 5) {
       this.setState({
         mr: 0
@@ -125,9 +125,9 @@ class Home extends Component {
   };
 
   lowerLeft = () => {
-    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl + 1 && this.state.bl + 1 === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
+    if (this.state.tl === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl + 1 && this.state.bl + 1 === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl) {
       this.toggle()
-     }
+    }
     if (this.state.bl === 5) {
       this.setState({
         bl: 0
@@ -140,9 +140,9 @@ class Home extends Component {
   };
 
   lowerMiddle = () => {
-    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm + 1 && this.state.bm + 1 === this.state.br && this.state.br === this.state.tl) {
+    if (this.state.tl === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm + 1 && this.state.bm + 1 === this.state.br && this.state.br === this.state.tl) {
       this.toggle()
-     }
+    }
     if (this.state.bm === 5) {
       this.setState({
         bm: 0
@@ -155,9 +155,9 @@ class Home extends Component {
   };
 
   lowerRight = () => {
-    if (this.state.tl  === this.state.tm  && this.state.tm  === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br + 1 && this.state.br + 1 === this.state.tl) {
+    if (this.state.tl === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br + 1 && this.state.br + 1 === this.state.tl) {
       this.toggle()
-     }
+    }
     if (this.state.br === 5) {
       this.setState({
         br: 0
@@ -188,11 +188,11 @@ class Home extends Component {
 
         <Navbar />
         <div className="container pb-4 pt-4">
-      
+
           <div id="box" className="text-center">
             <h1>Hello my name is Paul Thomas</h1>
             <h3>Thanks for coming to my website!</h3>
-            <h3>Try to solve one of my favorite puzzles</h3> 
+            <h3>Try to solve one of my favorite puzzles</h3>
           </div>
           <div className="container pt-4 mt-4">
             <div className="row d-flex justify-content-center" >

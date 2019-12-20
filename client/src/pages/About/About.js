@@ -1,38 +1,61 @@
-import React, { Component } from "react";
-import NavBar from '../../components/NavBar';
-import Footer from './../../components/Footer'
-import './style.css'
-import resume from './../../images/resume.pdf'
+import React from 'react';
+import Slider from 'react-animated-slider';
+import Navbar from './../../components/NavBar';
+import Footer from './../../components/Footer';
+import 'react-animated-slider/build/horizontal.css';
+import './slider-animations.css';
+import './style.css';
+import paulPicOne from './../../images/paulPic.jpeg';
+import paulPicTwo from './../../images/goodcharlotte_header1.jpg';
+import paulPicThree from './../../images/photoPaulFire.JPG';
 
-class About extends Component {
-  render() {
-    return (
-      <div>
-        <NavBar />
-        <div id="about_me">
-          <div className="row">
-            <div className="col-12 text-center">
-              <h1 id="about_title" className="fluid text-center">About Me</h1>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-6 col-lg-6">
-            </div>
-            <div className="vh-100 vw-100 ml-4 pl-4">
-              <p className="jumbtron text-center bg-light" id="about_text">  
-              Full Stack Developer with an extensive background in the music industry and studio engineering.  Passionate about learning new technologies, collaborating, and efficiently creating quality software.  
 
-                </p>
-                <div className="vh-100 vw-100 ml-4 pl-4">
-                <p id="link_box" className="text-dark bg-light col-3">Check out my wikipedia.  <a href="https://en.wikipedia.org/wiki/Paul_Thomas_(bassist)">Go to wikipedia<i className="fa fa-paper-plane-o fa-1x" aria-hidden="true"></i>  </a>    It's pretty accurate <i className="fa fa-smile-o" aria-hidden="true"></i></p>
-                </div>
-            </div>
+
+const content = [
+  {
+    title: 'Musician and Engineer',
+    description:
+      `Hello my name is Paul Thomas.  For the past twenty years I have been touring around the world playing music.`,
+    image: paulPicOne,
+  },
+  {
+    title: 'My Band',
+    description:
+      `Who knew the band I started in high school would go on to have global sales of over 11 million albums!`,
+    button: 'Discover',
+    image: paulPicTwo,
+    user: 'Erich Behrens',
+    userProfile: 'https://i.imgur.com/0Clfnu7.png'
+  },
+  {
+    title: 'Priceless',
+    description: `Getting to experience different cultures and connecting with people through music has blessed me with a rare global education that few possess.`,
+    button: 'Buy now',
+    image: paulPicThree,
+    user: 'Bruno Vizovskyy',
+    userProfile: 'https://i.imgur.com/4KeKvtH.png'
+  }
+];
+
+const About = () => (
+  <div>
+    <Navbar />
+    <Slider className="slider-wrapper">
+      {content.map((item, index) => (
+        <div
+          key={index}
+          className="slider-content"
+          style={{ background: `url('${item.image}')`, backgroundPosition: 'center'  }}
+        >
+          <div className="inner">
+            <h1>{item.title}</h1>
+            <h3 className="text-light">{item.description}</h3>
           </div>
         </div>
-        <Footer />
-      </div>
-    )
-  }
-};
+      ))}
+    </Slider>
+    <Footer />
+  </div>
+);
 
 export default About;

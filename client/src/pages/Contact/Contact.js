@@ -99,7 +99,7 @@ class Contact extends Component {
               <div className="col-4">
               </div>
               <div className="col-4 text-center" style={{padding: "30px"}}>
-                <h4 className="text-center">Interested in making something cool together?</h4>
+                <h4 className="text-center">Whether it's music or web development, I'm your huckleberry!</h4>
                 <form>
                   <div className="form-group">
                     <label className="float-left">Name:</label>
