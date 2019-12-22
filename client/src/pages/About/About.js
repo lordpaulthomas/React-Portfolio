@@ -14,27 +14,27 @@ import family from './../../images/family.jpeg';
 
 const content = [
   {
-    title: 'Musician and Engineer',
+    title: 'Engineer',
     description:
-      `Hello my name is Paul Thomas.  I am from Waldorf, MD.  A small town outside of Washington D.C.`,
+      `Full Stack Developer determined to build decentralized applications. Passionate about learning new technologies and collaborating.`,
     image: paulPicOne,
   },
   {
-    title: 'My Band',
+    title: 'Musician',
     description:
       `Who knew the band I started in high school would go on to have global sales of over 11 million albums!`,
     button: 'Discover',
     image: paulPicTwo,
   },
   {
-    title: 'Tech',
-    description: `I have always been intrigued by technology, so I studied audio engineering so I could make music`,
+    title: 'Student',
+    description: `In between tours I attended college where I studied Music, Mathematics and Computer Science.`,
     image: studio,
   },
   {
-    title: 'Family',
-    description: `Now I am trying to spend more time with these guys.  Working closer to home making connections with people around the world with a new medium`,
-    image: family,
+    title: 'Family Man',
+    description: `I love exploring the world with my family.  We enjoy going to art museums, camping, skiing and traveling.`,
+    image: 'https://media.giphy.com/media/U2F6RQwR454gSegBJy/giphy.gif'
   }
 ];
 
@@ -46,7 +46,7 @@ const About = () => (
         <div
           key={index}
           className="slider-content"
-          style={{ background: `url('${item.image}')`, backgroundPosition: 'center', backgroundSize: 'cover' }}
+          style={{ background: `url('${item.image}')`, backgroundPosition: 'center', backgroundSize: 'contain' }}
         >
           <div className="inner">
             <h1>{item.title}</h1>

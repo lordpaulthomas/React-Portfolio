@@ -192,7 +192,7 @@ class Home extends Component {
           <div id="box" className="text-center">
             <h1>Hello my name is Paul Thomas</h1>
             <h3>Thanks for coming to my website!</h3>
-            <h3>Try to solve one of my favorite puzzles</h3>
+            <h3>Solve one of my favorite puzzles and unlock a hidden video.</h3>
           </div>
           <div className="container pt-4 mt-4">
             <div className="row d-flex justify-content-center" >
