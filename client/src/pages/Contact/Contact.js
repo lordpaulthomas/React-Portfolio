@@ -98,8 +98,8 @@ class Contact extends Component {
             <div className="row">
               <div className="col-4">
               </div>
-              <div className="col-4 text-center" style={{padding: "30px"}}>
-                <h4 className="text-center">Whether it's music or web development, I'm your huckleberry!</h4>
+              <div className="text-center" style={{padding: "30px"}}>
+                <h4 id="contact"className="text-center">Whether it's making music or developing a website, I'm your huckleberry!</h4>
                 <form>
                   <div className="form-group">
                     <label className="float-left">Name:</label>

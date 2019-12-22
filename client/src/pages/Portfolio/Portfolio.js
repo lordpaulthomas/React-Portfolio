@@ -14,13 +14,13 @@ class Portfolio extends Component {
     return (
       <div>
         <NavBar />
-        <Wrapper>
+        <Wrapper >
           {
             this.state.projects.map(project => {
               return (
                 <ProjectCard
                   key={project.id}
-                  id={project.id}
+                  id="wrapper"
                   title={project.title}
                   link={project.link}
                   image={project.image}

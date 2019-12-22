@@ -5,7 +5,7 @@ import Home from "./pages/Home"
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-
+import './pages/About/style.css';
 
 class App extends Component {
   render() {

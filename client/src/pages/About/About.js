@@ -50,7 +50,7 @@ const About = () => (
         >
           <div className="inner">
             <h1>{item.title}</h1>
-            <h3 style={{margin: 'auto', marginTop: '1em'}}className="text-light col-6">{item.description}</h3>
+            <h3 id="text" style={{margin: 'auto', marginTop: '1em'}}className="col-6">{item.description}</h3>
           </div>
         </div>
       ))}
