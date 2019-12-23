@@ -1,12 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
-
+*{
+  color: black;
+}
 body {
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   color: white;
 }
+#contact{
+  color: black;
+  font-size: 46px;
+  margin: auto;
+}
 
+label{
+  color: black;
+  margin: auto;
+}
 header {
   position: fixed;
   top: 0;
