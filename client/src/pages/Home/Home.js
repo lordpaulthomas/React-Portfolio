@@ -176,7 +176,8 @@ class Home extends Component {
           <Modal isOpen={this.state.modal} toggle={this.toggle}>
             <ModalHeader toggle={this.toggle}></ModalHeader>
             <ModalBody>
-              <h4 className="text-center">You Did it! Enjoy a GC video :) </h4>
+              <h4 className="text-center">You Did it! <span className="emoji" role="img" aria-label="">🤘😆🤘</span></h4>
+              <h5 className="text-center">Here's an exclusive Good Charlotte video!</h5>
               <video width="475px" height="500px" id="home_video" controls preload="none" className="video-js vjs-default-skin">
                 <source src={video} type="video/mp4" />
                 <track kind="captions" src="/vtt/captions.vtt" srcLang="en" label="English"></track>
@@ -191,7 +192,7 @@ class Home extends Component {
 
           <div id="box" className="text-center">
             <h1 id="intro">Hello my name is Paul Thomas</h1>
-            <h3 id="intro_text">🚀 Thanks for coming to my website! 🚀</h3>
+            <h3 id="intro_text"><span className="emoji" role="img" aria-label="">🚀 </span>Thanks for coming to my website! <span className="emoji" role="img" aria-label="">🚀 </span></h3>
             <h3 id="intro_text">Solve one of my favorite puzzles and unlock a hidden video.</h3>
           </div>
           <div className="container pt-4 mt-4">

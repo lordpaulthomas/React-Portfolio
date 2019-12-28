@@ -21,6 +21,8 @@ class Portfolio extends Component {
                 <ProjectCard
                   key={project.id}
                   id="wrapper"
+                  description={project.description}
+                  tech={project.tech}
                   title={project.title}
                   link={project.link}
                   image={project.image}

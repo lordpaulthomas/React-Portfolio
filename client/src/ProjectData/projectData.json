@@ -2,6 +2,17 @@
   {
     "id": 0,
     "image": "https://media.giphy.com/media/dxZaGetO7mcM5wDz8o/giphy.gif",
+    "tech": [
+      "React",
+      "Redux",
+      "MongoDb",
+      "Express",
+      "Node",
+      "JavaScript",
+      "CSS",
+      "Bootstrap"
+    ],
+    "description": "The 'Shazzam' of Lyrics.",
     "title": "That Song",
     "link": "https://thatsong.herokuapp.com/",
     "github": "https://github.com/PeterBWu/that-song"
@@ -9,6 +20,13 @@
   {
     "id": 1,
     "image": "https://media.giphy.com/media/fA8YA68E2qGtwhG1fK/giphy.gif",
+    "tech": [
+      "React",
+      "JavaScript",
+      "CSS",
+      "Bootstrap"
+    ],
+    "description": "Harry Potter themed memory game.",
     "title": "Memory Game",
     "link": "https://lordpaulthomas.github.io/potter-clicky-game/",
     "github": "https://github.com/lordpaulthomas/potter-clicky-game"
@@ -17,12 +35,33 @@
     "id": 2,
     "image": "https://media.giphy.com/media/d8tEoHPUauuLcFpXf9/giphy.gif",
     "title": "Google Books Search",
+    "tech": [
+      "React",
+      "MongoDb",
+      "Express",
+      "Node",
+      "JavaScript",
+      "CSS",
+      "Bootstrap"
+    ],
+    "description": "Book search engine utilizing 'Google Books' API.",
     "link": "https://my-google-books-library.herokuapp.com/",
     "github": "https://github.com/lordpaulthomas/Google-Books-Search"
   },
   {
     "id": 3,
     "image": "https://media.giphy.com/media/VbJvcKegzki57AskZH/giphy.gif",
+    "tech": [
+      "React",
+      "MongoDb",
+      "Express",
+      "Node",
+      "JavaScript",
+      "CSS",
+      "Cheerio",
+      "Bootstrap"
+    ],
+    "description":"Scrape the latest news from CoinDesk.",
     "title": "Web Scraper",
     "link": "https://crypto-desk.herokuapp.com/",
     "github": "https://github.com/lordpaulthomas/News-Scraper"
@@ -30,6 +69,16 @@
   {
     "id": 4,
     "image": "https://media.giphy.com/media/lqLdXEQZYhJ91qOPjd/giphy.gif",
+    "tech": [
+      "React",
+      "MySQL",
+      "Express",
+      "Node",
+      "JavaScript",
+      "CSS",
+      "Bootstrap"
+    ],
+    "description": "Become the new Champion in this RPG.",
     "title": "Gladiator",
     "link": "https://gladiator-fights.herokuapp.com/",
     "github": "https://github.com/PeterBWu/Gladiator"
@@ -37,6 +86,13 @@
   {
     "id": 5,
     "image": "https://media.giphy.com/media/7LfFXBn4we96o/giphy.gif",
+    "tech": [
+      "JQuery",
+      "JavaScript",
+      "CSS",
+      "Bootstrap"
+    ],
+    "description": "Test your H.P. knowledge with this timed quiz.",
     "title": "Harry Potter Trivia",
     "link": "https://lordpaulthomas.github.io/Trivia-Game-2/",
     "github": "https://github.com/lordpaulthomas/Trivia-Game-2"
@@ -44,6 +100,13 @@
   {
     "id": 6,
     "image": "http://giphygifs.s3.amazonaws.com/media/117Q7xzQUHm69W/giphy.gif",
+    "tech": [
+      "JQuery",
+      "JavaScript",
+      "CSS",
+      "Bootstrap"
+    ],
+    "description": "Use Giphy's API to search for gif's.",
     "title": "Giftastic",
     "link": "https://lordpaulthomas.github.io/GifTastic/",
     "github": "https://github.com/lordpaulthomas/GifTastic"
@@ -51,6 +114,14 @@
   {
     "id": 7,
     "image": "https://media.giphy.com/media/RBBgQaTF4WCT6/giphy.gif",
+    "tech": [
+      "JQuery",
+      "Firebase",
+      "JavaScript",
+      "CSS",
+      "Bootstrap"
+    ],
+    "description": "Caculate your train's arrival time.",
     "title": "Train Table",
     "link": "https://lordpaulthomas.github.io/Train-Time/",
     "github": "https://github.com/lordpaulthomas/Train-Time"
@@ -58,18 +129,34 @@
   {
     "id": 8,
     "image": "https://media.giphy.com/media/QtjrwGOR53DQqgBJHz/giphy.gif",
+    "tech": [
+      "Node",
+      "JavaScript"
+    ],
+    "description": "CLI for Spotify, Bands in Town, and OMDB API",
     "title": "Liri Node App",
     "link": "https://github.com/lordpaulthomas/liri-node-app"
   },
   {
     "id": 9,
     "image": "https://media.giphy.com/media/YmQQ7Q2SO67RitZ2rd/giphy.gif",
+    "tech": [
+      "Node",
+      "JavaScript"
+    ],
+    "description": "Guess the month of the year from you CLI",
     "title": "CLI Word Guess Game",
     "github": "https://github.com/lordpaulthomas/CLI-Word-Guess"
   },
   {
     "id": 10,
     "image": "https://media.giphy.com/media/LmrwrZJziYEQTZYDUq/giphy.gif",
+    "tech": [
+      "MySQL",
+      "Node",
+      "JavaScript"
+    ],
+    "description": "CLI faux marketplace with CRUD capabilities ",
     "title": "BAMAZON",
     "github": "https://github.com/lordpaulthomas/BAMAZON"
   }

@@ -8,7 +8,7 @@ const Footer = () => {
     <div>
       <footer className="page-footer font-small blue">
         <div className="footer-copyright text-center">
-          <i id="cog" className="fa fa-cog fa-pulse fa-2x pl-2" aria-hidden="true">
+          <i id="cogp" className="fa fa-cog fa-pulse fa-2x pl-2" aria-hidden="true">
           </i> 
           <a id="foot_link" className="pl-3 color-primary" href="www.goodcharlotte.com">   </a> © 2019 Copyright: Paul Thomas  
           <a id="foot_link" href="https://github.com/lordpaulthomas">   <img width="40px" height="40px" src={github} alt="Github"/>  </a>

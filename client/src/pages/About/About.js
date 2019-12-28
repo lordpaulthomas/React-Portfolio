@@ -8,7 +8,6 @@ import './style.css';
 import paulPicOne from './../../images/paulPic.jpeg';
 import paulPicTwo from './../../images/goodcharlotte_header1.jpg';
 import studio from './../../images/studio.jpg';
-import family from './../../images/family.jpeg';
 
 
 
@@ -45,12 +44,12 @@ const About = () => (
       {content.map((item, index) => (
         <div
           key={index}
-          className="slider-content"
+          className="slider-content "
           style={{ background: `url('${item.image}')`, backgroundPosition: 'center', backgroundSize: 'contain' }}
         >
           <div className="inner">
             <h1>{item.title}</h1>
-            <h3 id="text" style={{margin: 'auto', marginTop: '1em'}}className="col-6">{item.description}</h3>
+            <h3 id="text" style={{margin: 'auto', marginTop: '1em'}}className="col-6 text-light">{item.description}</h3>
           </div>
         </div>
       ))}
