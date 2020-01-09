@@ -18,7 +18,7 @@ class Portfolio extends Component {
           {
             this.state.projects.map(project => {
               return (
-                <ProjectCard
+                <ProjectCard 
                   key={project.id}
                   id="wrapper"
                   description={project.description}

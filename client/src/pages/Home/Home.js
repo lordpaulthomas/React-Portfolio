@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import axios from 'axios';
 import shuffle from 'shuffle-array';
 import "./style.css";
 import Navbar from './../../components/NavBar';
@@ -19,21 +19,62 @@ class Home extends Component {
     bl: 0,
     bm: 1,
     br: 2,
-    modal: false
+    modal: false,
+    modal_stars: false,
+    stars: '',
+    copyright: '',
+    title: '',
+    buttonText: 'See Stars',
+    button: false,
+    intro: 'black'
   };
+
+
 
   toggle = () => {
     this.setState({
       modal: !this.state.modal,
     });
   }
+  toggle_stars = () => {
+    this.setState({
+      modal_stars: !this.state.modal_stars,
+    });
+  }
 
+  getStars = async () => {
+    if(!this.state.button){
+    const starsAPIkey = 'OdY4PDWNz9npk8PpggGvNU5SNf8TPlzwf9lL7aQe';
+    try {
+      const pic = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${starsAPIkey}`)
+      this.setState({
+        stars: pic.data.url,
+        copyright: pic.data.copyright,
+        title: pic.data.title,
+        buttonText: 'Remove Stars',
+        button: true,
+        intro: '#F8F5F2'
+      })
+      this.toggle_stars();
+    }
+    catch (e) {
+      console.log(e)
+    }
+  }
+  else {
+    this.setState({
+      intro: 'black',
+      stars: '',
+      button: false,
+      buttonText: 'See Stars'
+    })
+  }
+}
   componentDidMount() {
     this.setState({
       colors: shuffle(this.state.colors)
     });
   };
-
 
   topLeft = () => {
     if (this.state.tl + 1 === this.state.tm && this.state.tm === this.state.tr && this.state.tr === this.state.ml && this.state.ml === this.state.mm && this.state.mm === this.state.mr && this.state.mr === this.state.bl && this.state.bl === this.state.bm && this.state.bm === this.state.br && this.state.br === this.state.tl + 1) {
@@ -186,14 +227,25 @@ class Home extends Component {
             <ModalFooter />
           </Modal>
         </div>
+        <div>
+          <Modal isOpen={this.state.modal_stars} toggle={this.toggle_stars}>
+            <ModalHeader style={{backgroundColor: '#00BCD4'}}toggle={this.toggle_stars}></ModalHeader>
+            <ModalBody>
+              <h4 style={{fontFamily: 'serif'}}className="text-center" style={{color: '#002D33'}}>Image provided by NASA's REST API</h4>
+              <h4  className="text-center" style={{color: '#002D33'}}>Title: <span style={{color: '#0092A6'}}>{this.state.title}</span></h4>
+              <h4 className="text-center" style={{color: '#002D33'}}>Copyright: <span style={{color: '#0092A6'}}>{this.state.copyright}</span></h4>
+            </ModalBody>
+            <ModalFooter style={{backgroundColor: '#00BCD4'}}/>
+          </Modal>
+        </div>
 
         <Navbar />
-        <div className="container pb-4 pt-4">
+        <div className="container pb-4 pt-4" style={{width: '100vw',backgroundImage: `url(${this.state.stars})`}}>
 
           <div id="box" className="text-center">
-            <h1 id="intro">Hello my name is Paul Thomas</h1>
-            <h3 id="intro_text"><span className="emoji" role="img" aria-label="">🚀 </span>Thanks for coming to my website! <span className="emoji" role="img" aria-label="">🚀 </span></h3>
-            <h3 id="intro_text">Solve one of my favorite puzzles and unlock a hidden video.</h3>
+            <h1 style={{color: `${this.state.intro}`}} >Hello my name is Paul Thomas</h1>
+            <h3 style={{color: `${this.state.intro}`}} ><span className="emoji" role="img" aria-label="">🚀 </span>Thanks for coming to my website! <span className="emoji" role="img" aria-label="">🚀 </span></h3>
+            <h3 style={{color: `${this.state.intro}`}} >Solve one of my favorite puzzles and unlock a hidden video.</h3>
           </div>
           <div className="container pt-4 mt-4">
             <div className="row d-flex justify-content-center" >
@@ -214,6 +266,9 @@ class Home extends Component {
           </div>
         </div>
         <div>
+        </div>
+        <div className="text-center">
+    <button onClick={this.getStars}>{this.state.buttonText}</button>
         </div>
         <Footer />
       </div>
