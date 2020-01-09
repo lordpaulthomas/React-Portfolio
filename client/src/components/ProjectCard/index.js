@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
                 <div className="text-center">
                   <div className="card-fluid-text text-center">{props.tech.join("--")}</div>
                 </div>
-                <a target="_blank" rel="noopener noreferrer" className="card-fluid-text text-light" href={props.git} style={{ fontSize: '15px', color: 'black' }}><img src={github} style={{ height: '30px' }} />Code</a>
+                <a target="_blank" rel="noopener noreferrer" className="card-fluid-text text-light" href={props.git} style={{ fontSize: '15px', color: 'black' }}><img src={github} style={{ height: '30px' }} alt=""/>Code</a>
                 <a target="_blank" rel="noopener noreferrer" className="card-fluid-text text-light" href={props.link} style={{ fontSize: '15px', color: 'black' }}><i class="fa fa-link" aria-hidden="true"></i> Visit site</a>
               </div >
 

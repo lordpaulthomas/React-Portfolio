@@ -4,7 +4,6 @@ import NavBar from './../../components/NavBar';
 import API from './../../utils/API';
 import Footer from './../../components/Footer';
 import giph from './../../ProjectData/videos/IMG_0105.MP4';
-import fire from './../../images/photoPaulFire.JPG';
 import './../About/style.css'
 class Contact extends Component {
   state = {
@@ -88,39 +87,39 @@ class Contact extends Component {
         </div>
 
         <NavBar />
-        <div style={{backgroundImage: `url(${fire})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
+        <div style={{ backgroundImage: `linear-gradient(60deg, #abecd6 0%, #fbed96 100%)`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
           <div>
             <div className="row text-center pl-4">
               <div className="col-4"></div>
               <div className="col-4">
-              
+
               </div>
               <div className="col-4"></div>
             </div>
             <div className="row">
               <div className="col-4">
               </div>
-              <div className="text-center" style={{padding: "30px"}}>
-                <h5 id="contact"className="text-light">Whether it's making music or developing a website, I'm your huckleberry!</h5>
+              <div className="text-center" style={{ color: 'black', padding: "30px" }}>
+                <h5 id="contact" className="text-dark">Whether it's making music or developing a website, I'm your huckleberry!</h5>
                 <form>
                   <div className="form-group">
                     <label >Name:</label>
                     <input type="name" onChange={this.handleNameInputChange}
                       className="form-control"
                       id="inputName" aria-describedby="nameHelp"
-                      placeholder="Enter Name" />
+                    />
                   </div>
                   <div className="form-group">
                     <label>Email:</label>
                     <input type="email" className="form-control" onChange={this.handleEmailInputChange}
-                      id="inputEmail" placeholder=" Enter Email" />
+                      id="inputEmail" />
                   </div>
                   <div className="form-group">
                     <label >Message:</label>
                     <input type="message" className="form-control"
-                      id="inputMessage" placeholder="Enter Message" onChange={this.handleMessageInputChange} />
+                      id="inputMessage" onChange={this.handleMessageInputChange} />
                   </div>
-                  <button onClick={this.handleSubmit} type="submit" className="btn btn-outline-light btn-lg"
+                  <button onClick={this.handleSubmit} type="submit" className="btn btn-outline-dark btn-lg"
                   >Submit</button>
                 </form>
               </div>

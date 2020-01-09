@@ -1,11 +1,10 @@
 import React from "react";
 import github from "./../../images/github.png";
-import twitter from './../../images/twitter.png';
 import linkedin from './../../images/linkedin.png';
 import soundCloud from './../../images/soundCloud.png';
 const Footer = () => {
   return (
-    <div>
+    <div className="text-light border border-dark">
       <footer className="page-footer font-small blue">
         <div className="footer-copyright text-center">
           <i id="cogp" className="fa fa-cog fa-pulse fa-2x pl-2" aria-hidden="true">

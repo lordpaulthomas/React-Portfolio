@@ -231,7 +231,7 @@ class Home extends Component {
           <Modal isOpen={this.state.modal_stars} toggle={this.toggle_stars}>
             <ModalHeader style={{backgroundColor: '#00BCD4'}}toggle={this.toggle_stars}></ModalHeader>
             <ModalBody>
-              <h4 style={{fontFamily: 'serif'}}className="text-center" style={{color: '#002D33'}}>Image provided by NASA's REST API</h4>
+              <h4 style={{fontFamily: 'serif', color: '#002D33'}}className="text-center">Image provided by NASA's REST API</h4>
               <h4  className="text-center" style={{color: '#002D33'}}>Title: <span style={{color: '#0092A6'}}>{this.state.title}</span></h4>
               <h4 className="text-center" style={{color: '#002D33'}}>Copyright: <span style={{color: '#0092A6'}}>{this.state.copyright}</span></h4>
             </ModalBody>

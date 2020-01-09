@@ -11,7 +11,7 @@ class NavBar extends Component {
         <ul className="nav nav-tabs">
           <Link
             id="header"
-            to="/"
+            to="/home"
           >
             <h1 id="name" className="ml-3 mr-3">Paul Thomas</h1>
           </Link>
