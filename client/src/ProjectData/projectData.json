@@ -144,7 +144,7 @@
       "Node",
       "JavaScript"
     ],
-    "description": "Guess the month of the year from you CLI",
+    "description": "Guess the month of the year from your CLI",
     "title": "CLI Word Guess Game",
     "github": "https://github.com/lordpaulthomas/CLI-Word-Guess"
   },
