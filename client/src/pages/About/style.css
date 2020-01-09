@@ -34,7 +34,14 @@ header section {
   padding: 20px;
   background: #FFD800;
 }
-
+#inputEmail, #inputName, #inputMessage{
+  margin: auto;
+  width: 50%;
+}
+#inputMessage{
+  margin-top: 0;
+  height: 15vh;
+}
 @media (max-width: 1515px) {
   header section {
     max-width: 100%;
@@ -290,6 +297,7 @@ button:hover {
   }
   #inputEmail #inputName #inputMessage{
     font-size: 22px;
+    width: 50vw;
   }
 }
 
@@ -306,3 +314,4 @@ button:hover {
   box-shadow: 0 8px 6px -6px black;
 
 }
+

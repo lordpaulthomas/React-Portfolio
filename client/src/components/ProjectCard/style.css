@@ -1,8 +1,8 @@
 
 
 .img-container{
-  height: 180px;
-  width: 180px;
+  height: 12em;
+  width: 10em;
 }
 
 .card-text:hover{
@@ -19,9 +19,10 @@
 
 .inner:hover img{
   transform: scale(1.5);
+  opacity: .3;
 }
 
 .card{
-  height: 300px;
-  width: 300px;
+  height: 22em;
+  width: 18em;
 }

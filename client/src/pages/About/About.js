@@ -15,7 +15,7 @@ const content = [
   {
     title: 'Engineer',
     description:
-      `Full Stack Developer determined to build decentralized applications. Passionate about learning new technologies and collaborating.`,
+      `Innovative Full Stack Developer with a background in the music industry and studio engineering. Experienced in producing dynamic applications with React, Redux, Node, MySQL and Mongodb. Proficient in Web Scraping, RESTful APIs, Google Analytics and ESP integration. Passionate about learning new technologies, collaborating, and efficiently executing projects. `,
     image: paulPicOne,
   },
   {

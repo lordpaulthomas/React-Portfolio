@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { ModalFooter, Modal, ModalHeader, ModalBody } from 'reactstrap';
-import NavBar from './../../components/NavBar'
-import API from './../../utils/API'
-import Footer from './../../components/Footer'
-import giph from './../../ProjectData/videos/IMG_0105.MP4'
+import NavBar from './../../components/NavBar';
+import API from './../../utils/API';
+import Footer from './../../components/Footer';
+import giph from './../../ProjectData/videos/IMG_0105.MP4';
+import fire from './../../images/photoPaulFire.JPG';
+import './../About/style.css'
 class Contact extends Component {
   state = {
     name: "",
@@ -86,7 +88,7 @@ class Contact extends Component {
         </div>
 
         <NavBar />
-        <div>
+        <div style={{backgroundImage: `url(${fire})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
           <div>
             <div className="row text-center pl-4">
               <div className="col-4"></div>
@@ -99,33 +101,33 @@ class Contact extends Component {
               <div className="col-4">
               </div>
               <div className="text-center" style={{padding: "30px"}}>
-                <h4 id="contact"className="text-center">Whether it's making music or developing a website, I'm your huckleberry!</h4>
+                <h5 id="contact"className="text-light">Whether it's making music or developing a website, I'm your huckleberry!</h5>
                 <form>
                   <div className="form-group">
-                    <label className="float-left">Name:</label>
+                    <label >Name:</label>
                     <input type="name" onChange={this.handleNameInputChange}
                       className="form-control"
                       id="inputName" aria-describedby="nameHelp"
                       placeholder="Enter Name" />
                   </div>
                   <div className="form-group">
-                    <label className="float-left">Email:</label>
+                    <label>Email:</label>
                     <input type="email" className="form-control" onChange={this.handleEmailInputChange}
                       id="inputEmail" placeholder=" Enter Email" />
                   </div>
                   <div className="form-group">
-                    <label className="float-left">Message:</label>
+                    <label >Message:</label>
                     <input type="message" className="form-control"
                       id="inputMessage" placeholder="Enter Message" onChange={this.handleMessageInputChange} />
                   </div>
-                  <button onClick={this.handleSubmit} type="submit" className="btn btn-outline-primary"
+                  <button onClick={this.handleSubmit} type="submit" className="btn btn-outline-light btn-lg"
                   >Submit</button>
                 </form>
               </div>
               <div className="col-4 pb-5"></div>
             </div>
           </div>
-          <div className="text-center" target="_blank" id='move_box'> <a href="https://www.goodcharlotte.com/pages/about">Click Me!!</a></div>
+          <div className="text-center" target="_blank" id='move_box'> <a target="_blank" rel="noopener noreferrer" href="https://www.goodcharlotte.com/pages/about">Click Me!!</a></div>
 
         </div>
         <Footer />
