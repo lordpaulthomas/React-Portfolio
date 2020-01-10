@@ -13,9 +13,9 @@ import studio from './../../images/studio.jpg';
 
 const content = [
   {
-    title: 'Engineer',
+    title: 'Web Developer',
     description:
-      `Innovative Full Stack Developer with a background in the music industry and studio engineering. Experienced in producing dynamic applications with React, Redux, Node, MySQL and Mongodb. Proficient in Web Scraping, RESTful APIs, Google Analytics and ESP integration. Passionate about learning new technologies, collaborating, and efficiently executing projects. `,
+      `Innovative Full Stack Developer with a background in the music industry and studio engineering. Passionate about learning new technologies, collaborating, and efficiently executing projects.`,
     image: paulPicOne,
   },
   {
@@ -23,6 +23,7 @@ const content = [
     description:
       `Who knew the band I started in high school would go on to have global sales of over 11 million albums!`,
     button: 'Discover',
+    link: 'https://www.goodcharlotte.com/pages/about',
     image: paulPicTwo,
   },
   {
@@ -49,7 +50,7 @@ const About = () => (
         >
           <div className="inner">
             <h1>{item.title}</h1>
-            <h3 id="text" style={{margin: 'auto', marginTop: '1em'}}className="col-6 text-light">{item.description}</h3>
+            <a href={item.link}><h3 id="text" style={{margin: 'auto', marginTop: '1em'}}className="col-6 text-light">{item.description}</h3></a>
           </div>
         </div>
       ))}
