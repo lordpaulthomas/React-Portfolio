@@ -99,8 +99,8 @@ class Contact extends Component {
             <div className="row">
               <div className="col-4">
               </div>
-              <div className="text-center" style={{ color: 'black', padding: "30px" }}>
-                <h5 id="contact" className="text-dark">Whether it's making music or developing a website, I'm your huckleberry!</h5>
+              <div className="text-center" style={{ color: 'black', padding: "30px", margin: "auto" }}>
+                <h5 id="contact" className="text-dark">Email me at <span style={{color: 'red'}}> traitorpt@gmail.com </span> <br/> Or leave your contact info below.</h5>
                 <form>
                   <div className="form-group">
                     <label >Name:</label>
