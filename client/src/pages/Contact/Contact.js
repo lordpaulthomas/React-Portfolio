@@ -87,7 +87,7 @@ class Contact extends Component {
         </div>
 
         <NavBar />
-        <div style={{ backgroundImage: `linear-gradient(60deg, #abecd6 0%, #fbed96 100%)`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
+        <div style={{ backgroundImage: `linear-gradient(60deg, #abecd6 0%, #fbed96 100%)`, backgroundPosition: 'center', backgroundSize: 'cover', height: '100vh' }}>
           <div>
             <div className="row text-center pl-4">
               <div className="col-4"></div>
@@ -97,10 +97,10 @@ class Contact extends Component {
               <div className="col-4"></div>
             </div>
             <div className="row">
-              <div className="col-4">
+              <div>
               </div>
               <div className="text-center" style={{ color: 'black', padding: "30px", margin: "auto" }}>
-                <h5 id="contact" className="text-dark">Email me at <span style={{color: 'red'}}> traitorpt@gmail.com </span> <br/> Or leave your contact info below.</h5>
+                <h5 id="contact" className="text-dark">Email me at <span style={{ color: 'red' }}> traitorpt@gmail.com </span> <br /> Or leave your contact info below.</h5>
                 <form>
                   <div className="form-group">
                     <label >Name:</label>
@@ -123,7 +123,6 @@ class Contact extends Component {
                   >Submit</button>
                 </form>
               </div>
-              <div className="col-4 pb-5"></div>
             </div>
           </div>
           <div className="text-center" target="_blank" id='move_box'> <a target="_blank" rel="noopener noreferrer" href="https://www.goodcharlotte.com/pages/about">Click Me!!</a></div>

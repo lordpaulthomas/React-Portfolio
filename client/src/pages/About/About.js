@@ -41,20 +41,23 @@ const content = [
 const About = () => (
   <div>
     <Navbar />
-    <Slider className="slider-wrapper">
-      {content.map((item, index) => (
-        <div
-          key={index}
-          className="slider-content "
-          style={{ background: `url('${item.image}')`, backgroundPosition: 'center', backgroundSize: 'contain' }}
-        >
-          <div className="inner">
-            <h1>{item.title}</h1>
-            <a href={item.link}><h3 id="text" style={{margin: 'auto', marginTop: '1em'}}className="col-6 text-light">{item.description}</h3></a>
+    <div style={{height: 'auto'}}>
+      <Slider className="slider-wrapper">
+        {content.map((item, index) => (
+          <div
+          
+            key={index}
+            className="slider-content "
+            style={{ background: `url('${item.image}')`, backgroundPosition: 'center', backgroundSize: 'contain' }}
+          >
+            <div className="inner">
+              <h1>{item.title}</h1>
+              <a href={item.link}><h3 id="text" style={{ margin: 'auto', marginTop: '1em' }} className="col-6 text-light">{item.description}</h3></a>
+            </div>
           </div>
-        </div>
-      ))}
-    </Slider>
+        ))}
+      </Slider>
+    </div>
     <Footer />
   </div>
 );
