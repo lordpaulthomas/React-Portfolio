@@ -29,6 +29,13 @@ h1, h3 {
   color: darkslategray;
   font-family: 'Arvo', serif;
 }
-
+#info{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  justify-content: space-around;
+}
 
 

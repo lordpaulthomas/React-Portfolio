@@ -1,30 +1,89 @@
-#tab{
+#tab1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.3em;
-  color: gainsboro;
-  background-blend-mode: darken;
+  color: rgba(22,223,1,23);
+  animation: thrive 3s infinite;
 }
-
-#name{
-  
-  animation: pulse 5s infinite;
-  
+#tab2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+  color: rgba(22,223,1,23);
+  animation: thrive 3s infinite;
 }
-
-#name:hover{
-
-  animation: spin 5s infinite;
-  color: darkcyan;
+#tab3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+  color: rgba(22,223,1,23);
+  animation: thrive 3s infinite;
 }
-
-@keyframes pulse {
-  0%, 100% {
-    color: white;
-  
+@keyframes thrive {
+  0%{
+    opacity: .8;
   }
-  50% {
-    color: lightgray;
+  50%{
+    opacity: 1;
     
+  }
+  80%{
+    opacity: .9;
+  }
+  100%{
+    opacity: .8;
+  }
+  
+}
+li{
+  display: flex;
+  flex: wrap;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-content: space-evenly;
+  font-size: x-large;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: all 1.5s ease;
+}
+li:hover {
+  transform: scale(1.3);
+  
+}
+#name {
+  padding-left: 2em;
+  animation: pulse 50s infinite;
+}
+@keyframes rotate {
+  start{
+    transform: rotateX(0deg);
+  }
+  end{
+    transform: rotateX(360deg);
+  }
+}
+@keyframes pulse {
+  0% {
+    color: red;
+  }
+  14% {
+    color: orange;
+  }
+  28% {
+    color: yellow;
+  }
+  42% {
+    color: green;
+  }
+  56% {
+    color: blue;
+  }
+  70% {
+    color: indigo;
+  }
+  84% {
+    color: violet;
+  }
+  100% {
+    color: red;
   }
 }
 
@@ -45,7 +104,6 @@
   animation: logoSpin 3s infinite;
 }
 
-
 @keyframes logoSpin {
   from {
     -moz-transform: rotateX(-360deg);
@@ -58,4 +116,3 @@
     transform: rotateX(0deg);
   }
 }
-

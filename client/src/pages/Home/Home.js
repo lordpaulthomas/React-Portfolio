@@ -47,6 +47,7 @@ class Home extends Component {
     const starsAPIkey = 'OdY4PDWNz9npk8PpggGvNU5SNf8TPlzwf9lL7aQe';
     try {
       const pic = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${starsAPIkey}`)
+      console.log(pic);
       this.setState({
         stars: pic.data.url,
         copyright: pic.data.copyright,
@@ -270,6 +271,10 @@ class Home extends Component {
         <div className="text-center">
     <button onClick={this.getStars}>{this.state.buttonText}</button>
         </div>
+        <h3 id="info">
+          <span>Email: traitorpt@gmail.com</span>
+          <span>Phone: 510-502-3002</span>
+        </h3>
         <Footer />
       </div>
     )

@@ -6,6 +6,7 @@
 }
 
 .slide button {
+	
 	transition: all 0.3s ease;
 	-webkit-transform: translateY(20px);
 					transform: translateY(20px);

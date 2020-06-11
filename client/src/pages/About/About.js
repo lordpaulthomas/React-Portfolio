@@ -3,7 +3,7 @@ import Slider from 'react-animated-slider';
 import Navbar from './../../components/NavBar';
 import Footer from './../../components/Footer';
 import 'react-animated-slider/build/horizontal.css';
-import './slider-animations.css';
+
 import './style.css';
 import paulPicOne from './../../images/paulPic.jpeg';
 import paulPicTwo from './../../images/goodcharlotte_header1.jpg';
@@ -42,12 +42,12 @@ const About = () => (
   <div>
     <Navbar />
     <div style={{height: 'auto'}}>
-      <Slider className="slider-wrapper">
+      <Slider className="slider-wrapper" >
         {content.map((item, index) => (
           <div
           
             key={index}
-            className="slider-content "
+            className="slider-content"
             style={{ background: `url('${item.image}')`, backgroundPosition: 'center', backgroundSize: 'contain' }}
           >
             <div className="inner">

@@ -3,7 +3,7 @@ import NavBar from './../../components/NavBar';
 import ProjectCard from "./../../components/ProjectCard";
 import Wrapper from "./../../components/Wrapper";
 import projects from "./../../ProjectData/projectData.json"
-
+import './style.css';
 class Portfolio extends Component {
 
   state = {
@@ -12,7 +12,7 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <div>
+      <div >
         <NavBar />
         <Wrapper >
           {
@@ -20,6 +20,7 @@ class Portfolio extends Component {
               return (
                 <ProjectCard 
                   key={project.id}
+                  style={{width: "100vw;"}}
                   id="wrapper"
                   description={project.description}
                   tech={project.tech}

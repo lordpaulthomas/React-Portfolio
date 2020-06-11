@@ -2,6 +2,7 @@ import React from "react";
 import github from "./../../images/github.png";
 import linkedin from './../../images/linkedin.png';
 import soundCloud from './../../images/soundCloud.png';
+import './style.css';
 const Footer = () => {
   return (
     <div className="text-light border border-dark">
