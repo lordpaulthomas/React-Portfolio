@@ -52,7 +52,7 @@ const About = () => (
           >
             <div className="inner">
               <h1>{item.title}</h1>
-              <a href={item.link}><h3 id="text" style={{ margin: 'auto', marginTop: '1em' }} className="col-6 text-light">{item.description}</h3></a>
+              <a href={item.link}><h3 id="text"  className=" text-light">{item.description}</h3></a>
             </div>
           </div>
         ))}

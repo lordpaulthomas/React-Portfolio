@@ -244,9 +244,9 @@ class Home extends Component {
         <div className="container pb-4 pt-4" style={{width: '100vw',backgroundImage: `url(${this.state.stars})`}}>
 
           <div id="box" className="text-center">
-            <h1 style={{color: `${this.state.intro}`}} >Hello my name is Paul Thomas</h1>
+            <h1 id="intro"style={{color: `${this.state.intro}`}} >Hello my name is Paul Thomas</h1>
             <h3 style={{color: `${this.state.intro}`}} ><span className="emoji" role="img" aria-label="">🚀 </span>Thanks for coming to my website! <span className="emoji" role="img" aria-label="">🚀 </span></h3>
-            <h3 style={{color: `${this.state.intro}`}} >Solve one of my favorite puzzles and unlock a hidden video.</h3>
+            <h3 id="cube"style={{color: `${this.state.intro}`}} >Solve one of my favorite puzzles and unlock a hidden video.</h3>
           </div>
           <div className="container pt-4 mt-4">
             <div className="row d-flex justify-content-center" >

@@ -41,8 +41,11 @@
   }
 }
 #outside {
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 #land {
   animation-name: slideup;
@@ -57,7 +60,7 @@
     transform: rotateZ(3600deg);
   }
 }
-.landing {
+/* .landing {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -69,12 +72,12 @@
   100% {
     opacity: 1;
   }
-}
+} */
 .landNav {
   width: 100vw;
   z-index: 1;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation-name: easein;
@@ -83,7 +86,7 @@
 }
 @keyframes easein {
   0% {
-    margin-top: 80%;
+    margin-top: 100%;
   }
   100% {
     margin-top: 0%;
@@ -99,8 +102,6 @@
 }
 
 #outside {
-  animation: fadeInAnimation 5s;
-  width: 100%;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 0.6, 1) 0%,
@@ -208,5 +209,80 @@
   100% {
     transform: scale(1.3) translateY(-90px) rotate(360deg);
     opacity: 0;
+  }
+}
+
+#text{
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+@media screen and (max-width: 400px) {
+  #intro{
+    font-size: 2rem;
+  }
+  #cube{
+    font-size: 1rem;
+  }
+  #text{
+    font-size: .7rem;
+    width: 100%;
+  }
+  #info{
+    font-size: 1rem;;
+    padding: .3rem;
+    width: 100%;
+
+
+  }
+  #links {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+
+    padding: 2px;
+    background-color: rgba(109, 107, 107, 0.5);
+  }
+  #name {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #tab1,
+  #tab2,
+  #tab3 {
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #tab1:hover,
+  #tab2:hover,
+  #tab3:hover {
+    transform: scale(1.3);
+  }
+  #tab1,
+  #tab2,
+  #tab3 {
+    font-size: 20;
+    border: black solid 2px;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 1rem;
+  }
+  .landNav {
+    top: 25%;
+    margin: 0;
+    padding: 0;
+  }
+  #outside {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
   }
 }
