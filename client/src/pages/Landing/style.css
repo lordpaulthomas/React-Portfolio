@@ -42,10 +42,20 @@
 }
 #outside {
   position: fixed;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 0.6, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 #land {
   animation-name: slideup;
@@ -101,14 +111,6 @@
   }
 }
 
-#outside {
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 0.6, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
 .box div {
   position: relative;
   height: 0px;
@@ -212,29 +214,27 @@
   }
 }
 
-#text{
+#text {
   padding: 1rem;
   margin: auto;
   text-align: center;
   width: 70%;
 }
 @media screen and (max-width: 400px) {
-  #intro{
+  #intro {
     font-size: 2rem;
   }
-  #cube{
+  #cube {
     font-size: 1rem;
   }
-  #text{
-    font-size: .7rem;
+  #text {
+    font-size: 0.7rem;
     width: 100%;
   }
-  #info{
-    font-size: 1rem;;
-    padding: .3rem;
+  #info {
+    font-size: 1rem;
+    padding: 0.3rem;
     width: 100%;
-
-
   }
   #links {
     display: flex;
@@ -274,15 +274,5 @@
     top: 25%;
     margin: 0;
     padding: 0;
-  }
-  #outside {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
   }
 }

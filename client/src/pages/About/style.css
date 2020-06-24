@@ -177,7 +177,7 @@ button:hover {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: url('http://svgshare.com/i/41_.svg') no-repeat center center /
+  background: url('https://th.bing.com/th/id/OIP.bRXZOmxLIAAdQ8XsuGfiigHaHa?w=174&h=180&c=7&o=5&dpr=2&pid=1.7') no-repeat center center /
     16px;
   width: 32px;
   height: 32px;
@@ -187,7 +187,7 @@ button:hover {
 
 .previousButton:hover,
 .nextButton:hover {
-  background: url('http://svgshare.com/i/41_.svg') no-repeat center center /
+  background: url('https://th.bing.com/th/id/OIP.bRXZOmxLIAAdQ8XsuGfiigHaHa?w=174&h=180&c=7&o=5&dpr=2&pid=1.7') no-repeat center center /
     16px;
 }
 

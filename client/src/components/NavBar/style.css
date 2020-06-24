@@ -24,6 +24,14 @@
   background-color:rgba(190, 189, 189, 0.137);
 
 }
+#nav {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 0.6, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
 
 #tab1, #tab2, #tab3 {
   animation: thrive 3s infinite;

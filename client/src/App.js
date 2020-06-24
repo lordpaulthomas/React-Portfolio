@@ -19,7 +19,7 @@ class App extends Component {
       <Router>
         <Route
           render={({location}) =>
-            console.log(location) || (
+             (
                <TransitionGroup>
                 <CSSTransition timeout={600} classNames={"move"} key={location.key}>
                   <Switch location={location}>
